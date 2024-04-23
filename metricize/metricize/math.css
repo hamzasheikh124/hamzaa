@@ -1,0 +1,516 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+    width: 100%;
+  
+}
+
+nav{
+    background-color: #000 !important;
+    color: #0057F7 !important;
+}
+.esate-list a{
+  text-decoration: none !important;
+  font-weight: 600 !important;
+}
+.esate-list a:hover{
+  text-decoration: underline !important;
+}
+
+
+/***
+fraction calculator css code start
+***/
+.fraction-calculator{
+  display: none;
+}
+.calculator {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+input[type="number"] {
+  width: 100px;
+  padding: 5px;
+  margin: 5px;
+}
+
+/***
+fraction calculator css code end
+***/
+
+/***
+percentage calculator css code start
+***/
+.percentage-calculator{
+  display: none;
+}
+.container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#result {
+  margin-top: 15px;
+  font-weight: bold;
+}
+/***
+percentage calculator css code end
+***/
+/***
+randam number calculator css code start
+***/
+.rnumber-calculator{
+  display: none;
+}
+.container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+  margin-top: 15px;
+  font-weight: bold;
+}
+/***
+randam number calculator css code end
+***/
+
+
+/***
+randam number calculator css code start
+***/
+.matrix-calculator{
+display: none;
+}
+.container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#matrixresult {
+  margin-top: 15px;
+  font-weight: bold;
+}
+/***
+randam number calculator css code end
+***/
+/***
+Ratio Calculator css code start
+***/
+.ratio-calculator{
+  display: none;
+}
+.container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#ratioresult {
+  margin-top: 15px;
+  font-weight: bold;
+}
+/***
+Ratio Calculator css code end
+***/
+/***
+Factor Calculator css code end
+***/
+.factor-calculator{
+  display: none;
+}
+.container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#factorresult {
+  margin-top: 15px;
+}
+/***
+Factor Calculator css code end
+***/
+/***
+daviation Calculator css code start
+***/
+.deviation-calculator{
+  display: none;
+}
+.container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#daviationresult {
+  margin-top: 15px;
+  font-weight: bold;
+}
+/***
+daviation Calculator css code end
+***/
+
+/***
+sequence Calculator css code start
+***/
+.sequence-calculator{
+  display: none;
+}
+.container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#sequenceresult {
+  margin-top: 15px;
+}
+/***
+sequence Calculator css code end
+***/
+
+/***
+sequence Calculator css code start
+***/
+.samplesize-calculator{
+  display: none;
+}
+
+  .container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#sampleresult {
+    margin-top: 15px;
+}
+/***
+sequence Calculator css code end
+***/
+
+/***
+sequence Calculator css code start
+***/
+.statistics-calculator{
+  display: none;
+}
+.container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#statisticsresult {
+  margin-top: 15px;
+}
+/***
+sequence Calculator css code end
+***/
+
+/***
+triangle Calculator css code start
+***/
+.triangle-calculator{
+  display: none;
+}
+.container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#triangleresult {
+  margin-top: 15px;
+}
+/***
+triangle Calculator css code end
+***/
+
+/***
+volume Calculator css code start
+***/
+.volume-calculator{
+  display: none;
+}
+.container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#volumeresult {
+  margin-top: 15px;
+}
+/***
+volume Calculator css code end
+***/
+
+/***
+Area Calculator css code end
+***/
+.area-calculator{
+  display: none;
+}
+.container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+section button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+section button:hover {
+  background-color: #0056b3;
+}
+#arearesult {
+  margin-top: 15px;
+}
+/***
+Area Calculator css code end
+***/
+
+/***
+distance Calculator css code end
+***/
+.distance-calculator{
+  display: none;
+}
+.container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-group input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.result {
+  margin-top: 15px;
+}
+.result p {
+  margin: 0;
+}
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+/***
+distance Calculator css code end
+***/

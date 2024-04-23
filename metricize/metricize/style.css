@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+html body{
+    height: 100%;
+    width: 100%;
+}
+::-webkit-scrollbar{
+    width: 0px;
+
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* overflow-x: hidden; */
+}
+.cursor{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    z-index: 777;
+    border-radius: 50%;
+    background-color: gray;
+}
+.privacy{
+    display: none;
+}
+.termUse{
+    display: none;
+}
+.about{
+    display: none;;
+}
+/* Nav CSS Code Start  */
+nav{
+    z-index: 999;
+    position: sticky!important;
+    top: 0!important;
+}
+.navbar{
+    background-color: #d3d3d3;
+}
+.navbar-brand img{
+    width: 200px;
+}
+.nav-link{
+    gap: 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    /* color: #000; */
+}
+.fa-bars{
+    color: #fff;
+}
+/* Nav CSS Code End  */
+
+/* CSS Hero Code Start  */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+    background-color: #000;
+}
+.wrapper .first-text {
+    font-size: 60px;
+    color: #fff;
+}
+.wrapper .sec-texts {
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.sec-texts li {
+    position: relative;
+    top: 0;
+    font-size: 60px;
+    color: #0ef;
+    list-style: none;
+    padding: 0 20px;
+    text-shadow: 0 0 5px #0ef;
+    animation: slide 12s steps(4) infinite, colorful 6s infinite;
+}
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+@keyframes colorful {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+.sec-texts li span {
+    position: relative;
+}
+.sec-texts li span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 400px;
+    height: 90px;
+    background: #000;
+    border-left: 2px solid #0ef;
+    animation: typing 1.5s steps(10) infinite alternate;
+}
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .wrapper{
+        display: none;
+    }
+}
+/* CSS Hero Code End  */
+
+/* CSS Calculator Code Start  */
+.calculator-cantainer{   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+.calculator-heading h4{
+    font-size: 3vw;
+    font-weight: 700;
+    color: #0057F7;
+}
+.calculator-heading p{
+    color: #fff;
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+.cal-p{
+    opacity: 1;
+    
+}
+table{
+    width: auto;
+    /* margin: auto; */
+    /* padding: auto; */
+    background: #0057F7;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    scale: 0.5;
+    transition: 1s;
+}
+#input, #output{
+    height: 40px;
+    font-size: 200%;
+    /* text-align: right; */
+    border: none;
+    width: 308px;
+}
+#input{
+    border-radius: 3px;
+    box-shadow: 2px black;
+    color: #000;
+}
+#output{
+    margin-left: 5px;
+    border-radius: 3px;
+    box-shadow: 2px black;
+    color: #444;
+}
+input[type=button]{
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background-color: #000;
+    margin: 5px;
+    border-radius: 3px;
+    border: none;
+    font-size: 1.5em;
+}
+input[type=button]:hover{
+    background: #ffeaeadc;
+    cursor: pointer;
+    color: #000;
+} 
+/* CSS Calculator Code End  */
+
+/* CSS Calculator-list Code Start  */
+.calculator-list{
+    background-color: #d3d3d3;
+    overflow: hidden;
+}
+.cal-list{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 125px;
+    /* background-color: #000; */
+    color: #fff;
+    padding-left: 30px;
+    border-bottom: 2px solid #000;
+}
+.b-top{
+    border-top: 2px solid #000;
+}
+.cal-list h3{
+    font-size: 3vw;
+    cursor: pointer;
+    color: #000;
+}
+.cal-list h3:hover{
+    color: #0057F7!important;
+}
+.cal-list img{
+    height: 180px;
+    width: 250px;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    z-index: 888;
+    transform: translateY(-50%, -50%);
+}
+/* CSS Calculator-list Code End  */
+
+
+.blog-container{
+    /* background-color: #000; */
+    background-image: url(./image/blog-section.jpg);
+    object-fit: cover;
+    background-size: cover;
+    
+}
+.blog-container h3{
+    color: #fff;
+    font-size: 4vw;
+}
+.blogs{
+    margin-top: 80px!important;
+}
+.blog{
+    background-color: #d3d3d3; 
+    
+}
+.blog:hover{
+    background-color: #0057F7;
+    color: #fff;
+    cursor: pointer;
+}
+.read-blog{
+    height: 100px!important;
+    width: 100px !important;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0057F7;
+    color: #d3d3d3;
+}
+.read-blog:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+.footer{
+    display: flex;
+}

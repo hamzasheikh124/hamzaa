@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="financial.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+
+<body>
+  <nav class="nav-container p-0 ">
+    <nav class="navbar navbar-expand-lg p-0 ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img class="logo" src="./image/logo-removebg-preview.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+
+        </button>
+        <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 px-5 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="finan" href="./financial.html">Financial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./math.html">Math</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./health.html">Health & Fitness</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./other.html">Other</a>
+            </li>
+
+          
+            
+
+          </ul>
+
+
+        </div>
+      </div>
+    </nav>
+  </nav>
+
+  <section class="content">
+  <section class="container-fluid py-4 px-5 m-0 ">
+    <h3 class="h1 ">Finacial Calculators</h3>
+    <p >The following is a complete list of our financial calculators.</p>
+  </section>
+  <section class="container-fluid m-0">
+    <div class="row">
+      <div class="col-12 col-md-6 mortage">
+
+        <img src="./image/estate banner.png" alt="">
+        <div class="esate-list px-5 py-3 ">
+          <a id="mortage" href="#">Mortgage Calculator</a><br>
+          <a id="amortization" href="#">Amortization Calculator</a><br>
+          <a id="expense" href="#">Expense Calculator</a><br>
+          <a id="down" href="#">Down Payment Calculator</a><br>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 auto">
+        <img src="./image/auto banner.png" alt="">
+        <div class="esate-list px-5 py-3 ">
+          <a id="auto" href="#">Auto Loan Calculator</a><br>
+          <a id="cashBack" href="#">Cash Back or Low Interest Calculator</a><br>
+          <a id="autoLease" href="#">Auto Lease Calculator</a>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5 ">
+      <div class="col-12 col-md-6 tax">
+
+        <img src="./image/tax and salary.png" alt="">
+        <div class="esate-list px-5 py-3 ">
+          <a id="income" href="#">Income Tax Calculator</a><br>
+          <a id="salary" href="#">Salary Calculator</a><br>
+          
+        </div>
+      </div>
+      <div class="col-12 col-md-6 investment">
+        <img src="./image/investment banner.png" alt="">
+        <div class="esate-list px-5 py-3 ">
+          <a id="interest" href="#">Interest Calculator</a><br>
+          <a id="finance" href="#">Finance Calculator</a><br>
+          <a id="cd" href="#">CD Calculator</a>
+          
+        </div>
+      </div>
+    </div>
+
+    <section class="mortage-calculator mb-5 mt-0 p-0 ">
+      <h3>Mortgage Calculator</h3>
+      <div class="calcContainer">
+        <div class="calcSub">
+          <div class="calcHeading">Calculate your Monthly Payment</div>
+          <div>
+            <form action="#" name="mortgage_calculator">
+            <input type="text" class="calcInput" id="inCost" placeholder="Loan Amount ($)" />
+      
+      
+            <input type="text" class="calcInput" id="inDown" placeholder="Down Payment ($)" />
+      
+      
+            <input type="text" class="calcInput" id="inInterest" placeholder="Interest (%)" />
+      
+      
+            <input type="text" class="calcInput" id="inTerm" placeholder="Length of Loan (years)" />
+          </div>
+          <p>
+            <button type="button" class="calcButton" id="btnCalculate">Calculate</button></form>
+          </p>
+          <p class="calcAnswer"><b>Total Monthly Payment</b>:
+            <br/>
+            <br/><span id="outMonthly">Please enter the values above.</span></p>
+        </div>
+      </div>
+    </section>
+    <section class="amortization-calculator mb-5 mt-0 mx-0  p-0 w-100 ">
+      <div class="container">
+        <h3 >Amortization Calculator</h3>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card card-body text-center mt-5">
+              <h1 class="heading display-5 pb-3">Loan Calculator</h1>
+              <form id="loan-form">
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">%</span>
+                    <input type="number" class="form-control" id="interest" placeholder="Interest">
+                  </div>
+                </div>
+                <div class="form-group">
+                   <div class="input-group">
+                   <span class="input-group-addon">years</span>
+                  <input type="number" class="form-control" id="years" placeholder="Years To Repay">
+                      </div>
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Calculate" class="btn btn-dark btn-block">
+                </div>
+              </form>
+              <!-- LOADER -->
+              
+              <div id="loading">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/460875/loading.gif" alt="">
+              </div>
+             
+              <!-- RESULTS -->
+              <div id="results" class="pt-4">
+                <h5>Results</h5>
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">Monthly Payment</span>
+                    <input type="number" class="form-control" id="monthly-payment" disabled>
+                  </div>
+                </div>
+  
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">Total Payment</span>
+                    <input type="number" class="form-control" id="total-payment" disabled>
+                  </div>
+                </div>
+  
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">Total Interest</span>
+                    <input type="number" class="form-control" id="total-interest" disabled>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- new -->
+           <div class="col-sm">
+            <div class="card card-body text-center mt-5">
+        <h5>Amortize the Loan</h5>
+               <form>
+      <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">$</span>       
+          <input type="text" class="form-control" id="principal" name="Principal" placeholder="Loan amount"/>
+          </div>
+           </div>
+             <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">%</span> 
+          <input type="text" class="form-control" id="interest" name="Interest" placeholder="interest"/>
+          </div>
+           </div>
+              <div class="form-group">
+                <label for="Terms">Terms</label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicons glyphicons-calendar"></span></span>  
+          <select class="form-control" id="terms">
+                 <option selected>Choose total Months</option>
+            <option value="12">12 Months</option>
+            <option value="24">24 Months</option>
+            <option value="36">36 Months</option>
+            <option value="48">48 Months</option>
+            <option value="60">60 Months</option>
+              <option value="60">72 Months</option>
+          </select>
+        </div></div>
+             
+          <input style="width: auto;" class="btn btn-dark btn-block" type="button" value="calculate" onclick="getValues()" />				
+        </div></div>
+      </form>
+           
+           <div class="col-sm">
+            <div class="card card-body text-center mt-5" id="amortresult">
+        <h5>Your Amoritization Results</h5>
+           <form>
+      <div class="form-group">
+      <!--	<label for="Output">Output</label> -->
+          <div id="Result"></div>					
+      </form>
+              </div></div>
+              
+              
+              </div>
+           </div>
+              </div>
+     </div>
+      </div>
+    </section>
+    <section class="expense-calculator mb-5 mt-0 mx-0  p-0">
+        <div class="form-container p-5 ">
+         <h1 class="text-center ">Calculate Expenses</h1>
+          <div class="form-div">
+            <span>Rent: </span>
+            <input type="text" id="rent" />
+          </div>
+          <div class="form-div">
+            <span>Phone Bill: </span>
+            <input type="text" id="phone-bill" />
+          </div>
+          <div class="form-div">
+            <span>Internet Bill: </span>
+            <input type="text" id="internet" />
+          </div>
+          <div class="form-div">
+            <span>Electricity Bill: </span>
+            <input type="text" id="electricity" />
+          </div>
+          <div class="form-div">
+            <span>Grocery Bill: </span>
+            <input type="text" id="groceries" />
+          </div>
+      
+          <div class="total-container">
+            <span >$</span>
+            <div id="total"></div>
+            <button id="button-bt">Total expense</button>
+            <button id="clear-bt">Clear</button>
+          </div>
+      
+          <div id="error-container">
+            <ul id="error">
+            </ul>
+          </div>
+        
+    </section>
+    <section class="down-calculator mb-5 mt-0 mx-0  p-0">
+      <div class="container">
+        <h2>Down Payment Calculator</h2>
+        <form id="downPaymentForm">
+          <label for="totalCost">Total Cost:</label>
+          <input type="number" id="totalCost" name="totalCost" placeholder="Enter total cost..." required>
+          <label for="downPaymentPercentage">Down Payment Percentage:</label>
+          <input type="number" id="downPaymentPercentage" name="downPaymentPercentage" placeholder="Enter down payment percentage..." required>
+          <input type="submit" value="Calculate">
+        </form>
+        <div id="result"></div>
+      </div>
+      
+    </section>
+    <section class="autoLoan-calculator mb-5 mt-0 mx-0  p-0">
+
+      <div class="container">
+        <h2>Auto Loan Calculator</h2>
+        <label for="loanAmount1">Loan Amount ($)</label>
+        <input type="number" id="loanAmount1" placeholder="Enter loan amount">
+        <label for="interestRate">Annual Interest Rate (%)</label>
+        <input type="number" id="interestRate1" placeholder="Enter interest rate">
+        <label for="loanTerm">Loan Term (months)</label>
+        <input type="number" id="loanTerm1" placeholder="Enter loan term">
+        <input type="button" value="Calculate" onclick="calculate()">
+        <div id="result1" style="margin-top: 10px;"></div>
+    </div>
+    </section>
+    <section class="cashBack-calculator mb-5 mt-0 mx-0 p-0 ">
+      <div class="container">
+        <h2>Cash Back or Low Interest Calculator</h2>
+        <label for="cashback">Cash Back (%)</label>
+        <input type="number" id="cashback" placeholder="Enter cash back percentage">
+        <label for="interestRate">Annual Interest Rate (%)</label>
+        <input type="number" id="interestRate2" placeholder="Enter interest rate">
+        <label for="purchaseAmount">Monthly Purchase Amount ($)</label>
+        <input type="number" id="purchaseAmount2" placeholder="Enter monthly purchase amount">
+        <label for="duration">Duration (months)</label>
+        <input type="number" id="duration2" placeholder="Enter duration in months">
+        <input type="button" value="Calculate" onclick="calculate1()">
+        <div id="result2"></div>
+    </div>
+    </section>
+    <section class="autoLease-calculator">
+      <div class="container">
+        <h2>Auto Lease Calculator</h2>
+        <label for="vehiclePrice">Vehicle Price ($)</label>
+        <input type="number" id="vehiclePrice" placeholder="Enter vehicle price">
+        <label for="downPayment">Down Payment ($)</label>
+        <input type="number" id="downPayment" placeholder="Enter down payment">
+        <label for="annualInterestRate">Annual Interest Rate (%)</label>
+        <input type="number" id="annualInterestRate" placeholder="Enter annual interest rate">
+        <label for="leaseTerm">Lease Term (months)</label>
+        <input type="number" id="leaseTerm" placeholder="Enter lease term">
+        <label for="milesPerYear">Miles Per Year</label>
+        <input type="number" id="milesPerYear" placeholder="Enter miles per year">
+        <input type="button" value="Calculate" onclick="autoLease()">
+        <div id="result3"></div>
+    </div>
+    </section>
+    <section class="interest-calculator">
+      <div class="container">
+        <h2>Interest Calculator</h2>
+        <label for="principal">Principal Amount ($)</label>
+        <input type="number" id="principal4" placeholder="Enter principal amount">
+        <label for="interestRate">Annual Interest Rate (%)</label>
+        <input type="number" id="interestRate4" placeholder="Enter annual interest rate">
+        <label for="duration">Duration (years)</label>
+        <input type="number" id="duration4" placeholder="Enter duration in years">
+        <input type="button" value="Calculate" onclick="interest()">
+        <div id="result4"></div>
+    </div>
+    </section>
+    <section class="finance-calculator">
+      <div class="container">
+        <h2>Finance Calculator</h2>
+        <label for="calculationType">Calculation Type</label>
+        <select id="calculationType">
+            <option value="loanPayment">Loan Payment</option>
+            <option value="futureValue">Future Value</option>
+            <option value="presentValue">Present Value</option>
+            <!-- Add more options for other calculations -->
+        </select>
+        <label for="principal">Principal ($)</label>
+        <input type="number" id="principal5" placeholder="Enter principal amount">
+        <label for="interestRate">Annual Interest Rate (%)</label>
+        <input type="number" id="interestRate5" placeholder="Enter annual interest rate">
+        <label for="duration">Duration (years)</label>
+        <input type="number" id="duration5" placeholder="Enter duration in years">
+        <input type="button" value="Calculate" onclick="finace()">
+        <div id="result5"></div>
+    </div>
+    </section>
+    <section class="cd-calculator">
+      <div class="container">
+        <h2>CD Calculator</h2>
+        <label for="principal">Principal Amount ($)</label>
+        <input type="number" id="principal6" placeholder="Enter principal amount">
+        <label for="interestRate">Annual Interest Rate (%)</label>
+        <input type="number" id="interestRate6" placeholder="Enter annual interest rate">
+        <label for="duration">Duration (years)</label>
+        <input type="number" id="duration6" placeholder="Enter duration in years">
+        <input type="button" value="Calculate" onclick="cd()">
+        <div id="result6"></div>
+    </div>
+    </section>
+    <section class="incomeTax-calculator">
+      <div class="container">
+        <h2>Income Tax Calculator</h2>
+        <label for="income">Taxable Income ($)</label>
+        <input type="number" id="income" placeholder="Enter taxable income">
+        <input type="button" value="Calculate" onclick="income()">
+        <div id="result7"></div>
+    </div>
+    
+    </section>
+    <section class="salary-calculator">
+      <div class="container">
+        <h2>Salary Calculator</h2>
+        <label for="hourlyWage">Hourly Wage ($)</label>
+        <input type="number" id="hourlyWage" placeholder="Enter hourly wage">
+        <label for="hoursPerWeek">Hours Per Week</label>
+        <input type="number" id="hoursPerWeek" placeholder="Enter hours per week">
+        <input type="button" value="Calculate" onclick="salary()">
+        <div id="result8"></div>
+    </div>
+    </section>
+  </section>
+</section>
+
+<section class="privacy p-5 ">
+  <h1>Privacy Policy</h1>
+    <p>Maple Tech International LLC operates the calculator.net website, which provides the SERVICE.</p>
+    <p>This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.</p>
+    <p>If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.</p>
+    <h2>Information Collection and Use</h2>
+    <p>We take and respect your privacy seriously. We may collect information via cookie or weblog. This is to customize services and enhance customer satisfaction.</p>
+    <h3>Log Data</h3>
+    <p>We want to inform you that whenever you visit our Service, we collect information that your browser sends to us that is called Log Data. This Log Data may include information such as your computer's Internet Protocol ("IP") address, browser version, pages of our Service that you visit, the time and date of your visit, the time spent on those pages, and other statistics.</p>
+    <h3>Cookies and Third-Party Advertising</h3>
+    <p>Cookies are files with a small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from the website that you visit and are stored on your computer's hard drive.</p>
+    <p>Our website uses these "cookies" to collect information and to improve our Service. You have the option to either accept or refuse these cookies, and know when a cookie is being sent to your computer. If you choose to refuse our cookies, you may not be able to use some portions of our Service.</p>
+    <p>We allow third-party companies to serve ads and/or collect certain anonymous information when you visit our website. These companies may use non-personally identifiable information (e.g., click stream information, browser type, time and date, subject of advertisements clicked or scrolled over) during your visits to this and other Web sites in order to provide advertisements about goods and services likely to be of greater interest to you. These companies typically use a cookie or third-party web beacon to collect this information. To learn more about this behavioral advertising practice or to opt-out of this type of advertising, please visit <a href="https://optout.networkadvertising.org">optout.networkadvertising.org</a>.</p>
+    <h3>Web Forms on Our Site</h3>
+    <p>The information you fill and submit by the web forms on our site enables the calculators to function.</p>
+    <h3>Security</h3>
+    <p>We value your trust in providing us your Personal Information. Thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the Internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
+    <h3>Links to Other Sites</h3>
+    <p>Our Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over, and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+    <h3>Children's Privacy</h3>
+    <p>Our Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to take the necessary actions.</p>
+    <h3>Changes to This Privacy Policy</h3>
+    <p>We reserve the right to update this privacy policy with or without notice. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.</p>
+
+</section>
+<section class="termUse p-5 ">
+  <h1>Terms of Use</h1>
+<h2>Acceptance of Terms</h2>
+<p>Maple Tech International LLC. ("Company") provides this website at calculator.net (referred to hereafter as "the Website") for use by consumers and businesses. By using the Website in any way, you are agreeing to comply with the Terms of Use. Should you object to any term or condition of the Terms of Use or any guideline of the Website, your only recourse is to immediately discontinue use of the Website.</p>
+
+<h2>Changes to the Terms of Use</h2>
+<p>We reserve the right, at our sole discretion, to change, modify, or alter the Terms of Use at any time. Such changes shall become effective immediately upon the posting thereof. The most current version of the Terms of Use will be linked from the footer of the Website. You must review the Terms of Use on a regular basis to keep yourself apprised of any changes.</p>
+
+<h2>Conduct</h2>
+<p>You agree not to post any text, files, images, video, audio, or other materials ("Content") or use the Website in any way that:</p>
+<ul>
+  <li>infringes any patent, trademark, trade secret, copyright, or other proprietary rights of any party;</li>
+  <li>violates any state, federal, or other law;</li>
+  <li>threatens, harasses, or is libelous;</li>
+  <li>is harmful to minors;</li>
+  <li>contains self-benefiting advertising or marketing in public areas of the Website that have not been paid for and are not designated for the addition of promotional content;</li>
+  <li>produces Software viruses or code harmful to other computers;</li>
+  <li>disrupts the normal dialogue of users of the Website;</li>
+  <li>employs misleading or false information;</li>
+  <li>uses forged headers or other items to manipulate identifiers in order to disguise the origin of Content.</li>
+</ul>
+<p>You agree not to decompile or reverse engineer or otherwise attempt to discover any source code contained in the Website.</p>
+<p>Unless you receive explicit permission, you agree not to reproduce, duplicate, copy, sell, resell, or exploit for any commercial purposes, any aspect of the Website. Any business that registers with a listing or purchases advertising or any other service ("Customer") has the right and permission to manage their listing or purchased advertising or other services to their commercial benefit so long as the codes of conduct above are not violated.</p>
+<h2>Privacy</h2>
+<p>Please review our Privacy Policy for details on the Company's collection, disclosure, and use of personally identifiable information and privacy matters. Use of the Website is based on your agreement to the Privacy Policy and Terms of Use.</p>
+
+<h2>Content</h2>
+<p>This Website and some of the Content on this Website contain links to other resources on the Internet. Such links are provided as aids to assist you in identifying and locating other Internet resources that may be of interest to you, and are not intended to state or imply that Company sponsors, endorses, are affiliated or associated with, or are legally authorized to use any trade name, registered trademark, logo, legal or official seal, or copyrighted symbol that may be reflected in said links.</p>
+<p>Information or calculation results at our Website may be outdated due to the date and the method of the collection or may be incorrect. If you find information or calculation results on the Website that you believe to be in error, please contact us with the specifics and we will investigate the matter and where we are allowed by our data source we will update the information.</p>
+
+<h2>Limitations and Termination</h2>
+<p>Company may create limitations of your use of the Website including, but not limited to, the number of times you may access the Website. Limitations can include full termination of your access to the Website and you agree that Company has the right at any time, in its sole discretion, with or without notice, to modify or discontinue the Website (or any part thereof).</p>
+
+<h2>Disclaimer of Warranties</h2>
+<p>THE COMPANY WEBSITE AND ANY INCLUDED SERVICES ARE PROVIDED ON AN "AS IS" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, INCLUDING WITHOUT LIMITATION THE WARRANTIES THAT IT IS FREE OF DEFECTS, ERRORS, VIRUSES, MERCHANTABLE AND THAT IT IS FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT. YOUR USE OF THE WEBSITE IS AT YOUR OWN RISK.</p>
+
+<h2>Limitations of Liability</h2>
+<p>UNDER NO CIRCUMSTANCES SHALL THE COMPANY BE LIABLE FOR DIRECT, INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, RESULTING FROM ANY ASPECT OF YOUR USE OF THE WEBSITE INCLUDING BUT NOT LIMITED TO DAMAGES THAT ARISE FROM YOUR INABILITY TO USE THE WEBSITE OR THE SERVICE, OR THE INTERRUPTION, MODIFICATION, OR TERMINATION OF THE WEBSITE OR ANY SERVICE OR PART THEREOF.</p>
+
+<h2>Jurisdiction</h2>
+<p>The Terms of Use shall be governed by the laws of the State of Texas without regard to its conflict of law provisions. You and Company agree to submit to the personal and exclusive jurisdiction of the courts located within the State of Texas.</p>
+
+<h2>Partial Invalidity</h2>
+<p>Any provision of this Terms of Use which is found to be invalid or unenforceable by any court in any jurisdiction shall not affect the validity or enforceability of the provision in other jurisdictions and shall not affect the validity or enforceability of the remaining provisions. The waiver or failure of the Company to exercise in any respect any right provided for in this Terms of Use shall not be deemed a waiver of any further right under this Agreement.</p>
+
+<h2>Violation of Terms</h2>
+<p>You agree that monetary damages may not be a sufficient remedy for any breach of this Agreement and that Company shall be entitled, without waiving any other rights or remedies, to seek injunctive or equitable relief as may be deemed proper by a court of competent jurisdiction.</p>
+
+<h2>General</h2>
+<p>The Terms of Use constitute the entire agreement between you and Company and govern your use of the Website, superseding any prior agreements between you and Company.</p>
+</section>
+<section class="about p-5 ">
+  <h2>About Us</h2>
+<p>We are a group of IT professionals enthusiastic in creating quality free tools and content on the Internet. The main purpose of this website is to provide a comprehensive collection of free online calculators for ease of public use. This site was launched on calculators.info first in 2007. In 2008, we migrated to calculator.net.</p>
+<p>The calculators on this site were grouped into 4 sections: financial, fitness & health, math, and others. All of the calculators were developed in-house. Some calculators use open-source JavaScript components under different open-source licenses. More than 90% of the calculators are based on well-known formulas or equations from textbooks, such as the mortgage calculator, BMI calculator, etc. If formulas are controversial, we provide the results of all popular formulas, as can be seen in the Ideal Weight Calculator. Calculators such as the love calculator that are solely meant for amusement are based on internal formulas. The results of the financial calculators were reviewed by our financial advisors, who work for major personal financial advising firms. The results of the health calculators were reviewed and approved by local medical doctors. More than 99% of the descriptive content was developed in-house with a small amount of content taken from wikipedia.org under the GNU Free Documentation License. The descriptive content of the financial calculators was created and reviewed by our financial team. The descriptive content of the health calculators was reviewed by local medical doctors.</p>
+<p>This site is owned and operated by Maple Tech International LLC.</p>
+</section>
+
+
+  <section class="footer align-items-center p-0" style="background-color: #ececec;">
+    <div class="row w-100 px-5 m-0 align-items-center ">
+    <div class="col-12 col-md-3 p-0 ">
+      <img height="60vh" src="./image/logo-removebg-preview.png" alt="">
+    </div>
+    <div class="col-12 col-md-5 p-0 ">
+      <p class="float-lg-end "><a id="about" href="#">About Us</a> | <a id="term" href="#">Terms of use</a> | <a id="privacy" href="#">Privacy Policy</a></p>
+
+    </div>
+    <div class="col-12 col-md-4 p-0 ">
+      <p style="float: right !important;"><i class="fa-regular fa-copyright"></i> Copyright 2024 | Metricize.com</p>
+
+    </div>
+    </div>
+
+  
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <script src="finacial.js"></script>
+</body>
+
+</html>

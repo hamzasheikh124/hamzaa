@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+    width: 100%;
+  
+}
+nav{
+    background-color: #000 !important;
+    color: #0057F7 !important;
+}
+.esate-list a{
+  text-decoration: none !important;
+  font-weight: 600 !important;
+}
+.esate-list a:hover{
+  text-decoration: underline !important;
+}
+.privacy{
+    display: none;
+}
+.footer{
+    margin-top: 17%;
+    bottom: 0;
+}
+/***
+age calculator css start
+***/
+.age-calculator{
+    display: none;
+}
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #333;
+}
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+input[type="date"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+section button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+section button:hover {
+    background-color: #0056b3;
+}
+p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+/***
+age calculator css end
+***/
+/***
+date and time calculator css start
+***/
+.date-calculator{
+    display: none;
+}
+/***
+date and time calculator css end
+***/
+/***
+time calculator css start
+***/
+.time-calculator{
+    display: none;
+}
+/***
+time calculator css end
+***/
+
+/***
+hour calculator css end
+***/
+.hour-calculator{
+    display: none;
+}
+/***
+hour calculator css end
+***/
+.day-calculator{
+    display: none;
+}
+.ip-calculator{
+    display: none;
+}
+.password-calculator{
+    display: none;
+}
+.Bandwidth-calculator{
+    display: none;
+}
+.wind-calculator{
+    display: none;
+}
+.heat-calculator{
+    display: none;
+}
+.dew-calculator{
+    display: none;
+}

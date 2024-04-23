@@ -1,0 +1,602 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+    width: 100%;
+  
+}
+nav{
+    background-color: #000 !important;
+    color: #0057F7 !important;
+}
+.esate-list a{
+  text-decoration: none !important;
+  font-weight: 600 !important;
+}
+.esate-list a:hover{
+  text-decoration: underline !important;
+}
+/***
+ mortage-calculator css code stat
+ ***/ 
+.mortage-calculator{
+    display: none;
+}
+.calcHeading {
+    color: #AA475D;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'CorporateSLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  .calcContainer {
+    position: static;
+    background-color: #EEF1F3;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    margin-left: calc(-1 * ((100vw - 100%) / 2));
+    padding-bottom: 2vw;
+  }
+  
+  .calcSub {
+    max-width: 880px;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  
+  .calcInput {
+    width: 22%;
+    left: 3%;
+    padding: 8px;
+    margin: 1%;
+    margin-left: 1.5%;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 150px;
+    text-align:center;
+  }
+
+  .calcButton {
+    border: 1px solid #142864;
+      padding: 5px;
+      background: #142864;
+      color: #fff;
+      font: inherit;
+      font-size: 1.2em;
+      display: block;
+      margin: 0 auto;
+    font-family: 'CorporateSLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .calcAnswer {
+    color: #AA475D;
+    font-size: 1.0em;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'CorporateSLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  #outMonthly {
+    color: #AA475D;
+    font-size: 1.0em;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'CorporateSLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+ /***
+ mortage-calculator css code end
+ ***/ 
+
+
+
+ /***
+ amortization-calculator css code stat
+ ***/ 
+
+  .amortization-calculator{
+    display: none;
+    background-color: #ccc;
+  }
+  @media (max-width: 680px) {
+    .calcInput {
+      width: 30%;
+      margin-left: 35%;
+      margin-right:35%;
+    }
+  }
+  body{
+    font-family: 'Roboto', sans-serif;
+ }
+ #loading{
+    display: none;
+ }
+ .form-group{
+    border-radius: 5px;
+    /* background-color: #AA475D; */
+    overflow: hidden;
+    margin-top: 2px;
+ }
+ .input-group-addon{
+    /* border: 1px solid black; */
+    padding: 1vw;
+    background-color: gray;
+ }
+ #amortresults{
+    float: right;
+     clear: left;
+     margin-right: 0!important;
+     position: relative;
+     top: -302px;
+ }
+ table{
+    table-layout: auto;
+    width: 100%;
+ }
+ th{
+    font-size: 1.5em;
+ }
+ /***
+ amortization-calculator css code end
+ ***/ 
+
+
+ /***
+ expense calculator css code start
+ ***/
+ /* @import "compass"; */
+.expense-calculator{
+  
+  background-color: #ccc;
+  display: none;
+  height: 80vh !important;
+  
+}
+
+ 
+
+   
+   
+ 
+ .form-div{
+   width:100%;
+   float:left;
+   margin-bottom:10px;
+ }
+ 
+ .form-div span , .total-container span{
+   width:100px;
+   float:left
+ }
+ 
+ .form-div input{
+   float:left;
+   width:100%;
+   height:30px;
+   @include border-radius(5px);
+   padding:5px;
+ }
+ 
+ .total-container{
+   float:left;
+   margin-top:40px;
+   
+   
+ }
+ .total-container span{
+  margin-left: 0%;
+  padding: 0 4px;
+  text-align: end;
+  font-size: 1.5vw;
+ }
+ #total{
+   float:left;
+   height:30px;
+   width:100px;
+   background-color:#fff;
+   
+   text-align:center;
+   /* padding:5px; */
+ }
+ 
+ #button-bt{
+   margin-left:10px;
+   float:left;
+   height:30px;
+ }
+ 
+ #clear-bt{
+ margin-left:10px;
+   float:left;
+   height:30px;
+ }
+ 
+ #error-container{
+   float:left;
+ }
+ 
+ #error{
+   clear:both;
+   margin-top:20px;
+   float:left;  
+ }
+ 
+ /***
+ expense calculator css code end
+ ***/
+
+ /***
+ downpayment calculator css code start
+ ***/
+ .down-calculator{
+  display: none;
+ }
+ .container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="number"], input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+/***
+autoLoan Calculator css code start
+***/
+
+
+.autoLoan-calculator{
+  display: none;
+}
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+label {
+  font-weight: bold;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+section input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+/***
+autoLoan Calculator css code end
+***/
+
+/***
+cash back Calculator css code start
+***/
+.cashBack-calculator{
+  display: none;
+}
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+label {
+  font-weight: bold;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+section input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+#result {
+  margin-top: 10px;
+}
+
+/***
+cash back Calculator css code end
+***/
+
+/***
+auto lease Calculator css code start
+***/
+.autoLease-calculator{
+  display: none;
+}
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+label {
+  font-weight: bold;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+section input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+#result {
+  margin-top: 10px;
+}
+/***
+auto lease Calculator css code end
+***/
+
+/***
+interest Calculator css code START
+***/
+.interest-calculator{
+  display: none;
+}
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+label {
+  font-weight: bold;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+section input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+#result {
+  margin-top: 10px;
+}
+/***
+interest Calculator css code end
+***/
+
+/***
+finance Calculator css code end
+***/
+.finance-calculator{
+  display: none;
+}
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+label {
+  font-weight: bold;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+section input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+#result {
+  margin-top: 10px;
+}
+/***
+finance Calculator css code end
+***/
+
+
+/***
+CD Calculator css code end
+***/
+.cd-calculator{
+display: none;
+}
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+label {
+  font-weight: bold;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+section input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+#result {
+  margin-top: 10px;
+}
+/***
+CD Calculator css code end
+***/
+
+
+/***
+income tax Calculator css code end
+***/
+.incomeTax-calculator{
+  display: none;
+}
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+label {
+  font-weight: bold;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+section input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+#result {
+  margin-top: 10px;
+}
+/***
+income tax Calculator css code end
+***/
+
+
+/***
+salary Calculator css code end
+***/
+.salary-calculator{
+  display: none;
+}
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+label {
+  font-weight: bold;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+section input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+#result {
+  margin-top: 10px;
+}
+/***
+salary Calculator css code end
+***/

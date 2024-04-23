@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+    width: 100%;
+  
+}
+
+nav{
+    background-color: #000 !important;
+    color: #0057F7 !important;
+}
+.esate-list a{
+  text-decoration: none !important;
+  font-weight: 600 !important;
+}
+.esate-list a:hover{
+  text-decoration: underline !important;
+}
+ /***
+ bmi calculator css code start
+ ***/
+ .bmi-calculator{
+    display: none;
+ }
+
+ /***
+ bmi calculator css code end
+ ***/
+
+ /***
+calorier calculator css code end
+ ***/
+ .calorier-calculator{
+    display: none;
+ }
+
+ /***
+calorier calculator css code end
+ ***/
+
+ /***
+fat-calculator css code start
+ ***/
+ .fat-calculator{
+    display: none;
+ }
+ 
+ /***
+fat-calculator css code end
+ ***/
+
+
+ /***
+bmr calculator css code end
+ ***/
+ .bmr-calculator{
+    display: none;
+ }
+ .container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+section button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#bmrresult {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+}
+ /***
+bmr calculator css code end
+ ***/
+ /***
+Ideal Weight Calculator css code start
+ ***/
+ .idealWeight-calculator{
+    display: none;
+ }
+ /***
+Ideal Weight Calculator css code end
+ ***/
+ /***
+Pace Calculator css code start
+ ***/
+ .pace-calculator{
+    display: none;
+ }
+ /***
+Pace Calculator css code end
+ ***/
+
+ /***
+Army Body Fat Calculator css code end
+ ***/
+ .army-calculator{
+    display: none;
+ }
+ /***
+Army Body Fat Calculator css code end
+ ***/
